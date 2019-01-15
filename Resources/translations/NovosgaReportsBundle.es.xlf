@@ -92,6 +92,10 @@
         <source>label.ticket</source>
         
       </trans-unit>
+      <trans-unit id="19">
+        <source>report.services_performed_triage</source>
+        <target>Serviços executados da triagem</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
