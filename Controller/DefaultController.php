@@ -167,6 +167,9 @@ class DefaultController extends Controller
             case 8:
                 $relatorio->setDados($this->perfis());
                 break;
+            case 9:
+                $relatorio->setDados($this->servicosRealizadosSelecionados($dataInicial, $dataFinal, $unidade));
+                break;
         }
         
         return $this->render("@NovosgaReports/default/relatorio.html.twig", [
@@ -561,6 +564,42 @@ class DefaultController extends Controller
                 'permissoes' => $perfil->getModulos(),
             ];
         }
+
+        return $dados;
+    }
+    
+    private function servicosRealizadosSelecionados(DateTime $dataInicial, DateTime $dataFinal, $unidade)
+    {
+
+        $rs = $this
+            ->getDoctrine()
+            ->getManager()
+            ->createQueryBuilder()
+            ->select([
+                'COUNT(s.id) as total',
+                's.nome',
+            ])
+            ->from(ViewAtendimento::class, 'a')
+            ->join('a.unidade', 'u')
+            ->join('a.servico', 's')
+            ->where('a.status = :status')
+            ->andWhere('a.dataChegada >= :inicio')
+            ->andWhere('a.dataChegada <= :fim')
+            ->andWhere('a.unidade = :unidade')
+            ->groupBy('s')
+            ->setParameters([
+                'status' => AtendimentoService::ATENDIMENTO_ENCERRADO,
+                'inicio'  => $dataInicial,
+                'fim'     => $dataFinal,
+                'unidade' => $unidade->getId()
+            ])
+            ->getQuery()
+            ->getResult();
+        
+        $dados = [
+            'unidade'  => $unidade->getNome(),
+            'servicos' => $rs,
+        ];
 
         return $dados;
     }
