@@ -38,6 +38,12 @@ App.Estatisticas = {
                 type: 'POST',
                 url: App.url('/novosga.reports/chart'),
                 data: $(form).serialize(),
+                beforeSend: function () {
+                    $('#chart-loading').css('visibility', 'visible');
+                },
+                complete: function () {
+                    $('#chart-loading').css('visibility', 'hidden');
+                },
                 success: function (response) {
                     $('#chart-result')
                         .html('')
