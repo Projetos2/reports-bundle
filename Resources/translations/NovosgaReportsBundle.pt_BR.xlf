@@ -48,11 +48,12 @@
       </trans-unit>
       <trans-unit id="11">
         <source>report.services_available_unity</source>
-        <target>Serviços Disponíveis - Unidade</target>
+        <!-- <target>Serviços Disponíveis - Unidade</target> -->
+        <target>Serviços atualmente disponíveis</target>
       </trans-unit>
       <trans-unit id="12">
         <source>report.services_performed</source>
-        <target>Serviços executados</target>
+        <target>Todos serviços executados</target>
       </trans-unit>
       <trans-unit id="13">
         <source>report.finished_servicing</source>
@@ -77,6 +78,10 @@
       <trans-unit id="18">
         <source>label.ticket</source>
         <target>Senha</target>
+      </trans-unit>
+      <trans-unit id="19">
+        <source>report.services_performed_triage</source>
+        <target>Serviços executados da triagem</target>
       </trans-unit>
     </body>
   </file>
