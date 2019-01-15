@@ -51,14 +51,16 @@ class ReportType extends AbstractType
         $report6 = $this->translator->trans('report.avg_time_servicing', [], DefaultController::DOMAIN);
         $report7 = $this->translator->trans('report.lotations', [], DefaultController::DOMAIN);
         $report8 = $this->translator->trans('report.roles', [], DefaultController::DOMAIN);
+        $report9 = $this->translator->trans('report.services_performed_triage', [], DefaultController::DOMAIN);
         
         $builder
             ->add('report', ChoiceType::class, [
                 'placeholder' => 'Selecione',
                 'choices' => [
-                    new Relatorio(1, $report1, 'servicos_disponiveis_global'),
+                    //new Relatorio(1, $report1, 'servicos_disponiveis_global'),
                     new Relatorio(2, $report2, 'servicos_disponiveis_unidade'),
                     new Relatorio(3, $report3, 'servicos_realizados', 'date-range'),
+                    new Relatorio(9, $report9, 'servicos_realizados_triage','date-range'),
                     new Relatorio(4, $report4, 'atendimentos_concluidos', 'date-range'),
                     new Relatorio(5, $report5, 'atendimentos_status', 'date-range'),
                     new Relatorio(6, $report6, 'tempo_medio_atendentes', 'date-range'),
