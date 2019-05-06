@@ -13,6 +13,7 @@
       </trans-unit>
       <trans-unit id="2">
         <source>subtitle</source>
+        <target>System reports and graphs.</target>
         
       </trans-unit>
       <trans-unit id="3">
@@ -62,6 +63,7 @@
       </trans-unit>
       <trans-unit id="12">
         <source>report.services_performed</source>
+        <target>Services performed</target>
         
       </trans-unit>
       <trans-unit id="13">
@@ -91,7 +93,7 @@
       </trans-unit>
       <trans-unit id="18">
         <source>label.ticket</source>
-        <target>Ticket</target>
+        <target>Password</target>
         
       </trans-unit>
       <trans-unit id="19">

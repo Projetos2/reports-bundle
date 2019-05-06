@@ -1,104 +1,100 @@
 <?xml version="1.0" ?><xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file datatype="plaintext" original="messages.pt_BR.xlf" source-language="pt-BR" target-language="es-AR">
+  <file datatype="plaintext" original="messages.pt_BR.xlf" source-language="pt-BR" target-language="en-US">
     <body>
       <trans-unit id="0">
         <source>module.name</source>
-        <target>Informes</target>
+        <target>Reports</target>
         
       </trans-unit>
       <trans-unit id="1">
         <source>title</source>
-        <target>Informes</target>
+        <target>Reports</target>
         
       </trans-unit>
       <trans-unit id="2">
         <source>subtitle</source>
-        <target>Informes y gráficos del sistema.</target>
+        <target>System reports and graphs.</target>
         
       </trans-unit>
       <trans-unit id="3">
         <source>label.wait_time</source>
-        <target>Tiempo de Espera</target>
+        <target>Waiting time</target>
         
       </trans-unit>
       <trans-unit id="4">
         <source>label.dislocation_time</source>
-        <target>Tiempo de desplazamiento</target>
+        <target>Travel time</target>
         
       </trans-unit>
       <trans-unit id="5">
         <source>label.servicing_time</source>
-        <target>Tiempo de atención</target>
+        <target>Service time</target>
         
       </trans-unit>
       <trans-unit id="6">
         <source>label.total_time</source>
-        <target>Tiempo Total</target>
+        <target>Total time</target>
         
       </trans-unit>
       <trans-unit id="7">
         <source>chart.servicing_by_status</source>
-        <target>Atención por estado</target>
+        <target>Status reports</target>
         
       </trans-unit>
       <trans-unit id="8">
         <source>chart.servicing_by_service</source>
-        <target>Atención por servicio</target>
+        <target>Service calls</target>
         
       </trans-unit>
       <trans-unit id="9">
         <source>chart.avg_servicing_time</source>
-        <target>Tiempo medio de atención</target>
+        <target>Average service time</target>
         
       </trans-unit>
       <trans-unit id="10">
         <source>report.services_available_global</source>
-        <target>Servicios Disponibles - Global</target>
+        <target>Available Services - Global</target>
         
       </trans-unit>
       <trans-unit id="11">
         <source>report.services_available_unity</source>
-        <target>Servicios Disponibles - Unidad</target>
+        <target>Available Services - Unit</target>
         
       </trans-unit>
       <trans-unit id="12">
         <source>report.services_performed</source>
-        <target>Servicios realizados</target>
+        <target>Services performed</target>
         
       </trans-unit>
       <trans-unit id="13">
         <source>report.finished_servicing</source>
-        <target>Atenciones concluidas</target>
+        <target>Completed calls</target>
         
       </trans-unit>
       <trans-unit id="14">
         <source>report.servicing_all_status</source>
-        <target>Atenciones en todos los estados</target>
+        <target>Attendance in all statuses</target>
         
       </trans-unit>
       <trans-unit id="15">
         <source>report.avg_time_servicing</source>
-        <target>Tiempos medios por operador</target>
+        <target>Average Times per Clerk</target>
         
       </trans-unit>
       <trans-unit id="16">
         <source>report.lotations</source>
-        <target>Dotaciones</target>
+        <target>Loans</target>
         
       </trans-unit>
       <trans-unit id="17">
         <source>report.roles</source>
-        <target>Perfiles</target>
+        <target>Profiles</target>
         
       </trans-unit>
       <trans-unit id="18">
         <source>label.ticket</source>
-        <target>Turno</target>
+        <target>Password</target>
         
-      </trans-unit>
-      <trans-unit id="19">
-        <source>report.services_performed_triage</source>
-        <target>Serviços executados da triagem</target>
       </trans-unit>
     </body>
   </file>
